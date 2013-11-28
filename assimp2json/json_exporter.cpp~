@@ -17,9 +17,9 @@ Licensed under a 3-clause BSD license. See the LICENSE file for more information
 #include <limits>
 #include <cassert>
 
-#ifdef EMSCRIPTEN
+		#if !EMSCRIPTEN
 #include <emscripten.h>
-#endif
+		#endif
 
 // grab scoped_ptr from assimp to avoid a dependency on boost. 
 #include <assimp/../../code/BoostWorkaround/boost/scoped_ptr.hpp>

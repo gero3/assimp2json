@@ -21,7 +21,7 @@ Licensed under a 3-clause BSD license. See the LICENSE file for more information
 #include "version.h"
 #include "logger.cpp"	
 	
-#ifdef EMSCRIPTEN
+#ifndef EMSCRIPTEN
 #include <emscripten.h>
 #endif
 
